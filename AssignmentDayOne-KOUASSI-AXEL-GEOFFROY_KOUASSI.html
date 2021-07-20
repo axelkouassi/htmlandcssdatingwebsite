@@ -1,0 +1,114 @@
+<!DOCTYPE html
+html
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Assignment Day 1-KOUASSIAXEL GEOFFROY KOUASSI 07/19</title>
+</head>
+
+<body>
+
+  <hr>
+
+  <form class="" action="index.html" method="post">
+
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+
+    <!-- Face details -->
+    <div id="face">
+      <p>Your Face</p>
+      <p>Your image: </p>
+      <form class="" action="index.html" method="post">
+        <label for="myfile">Choose File:</label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+      <p>Image preview: </p>
+    </div><br>
+
+    <!-- General Details -->
+    <div id="general-details">
+      <p>Your General details</p>
+      <!-- Name -->
+      <div id="name">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Your full name" name="name" value="">
+      </div><br>
+      <!-- Gender -->
+      <div id="gender">
+          <label for="gender-select">Gender:</label>
+          <!-- Male -->
+          <input type="radio" id="male" name="gender-select" value="male">
+          <label for="male">Male</label>
+          <!-- Female -->
+          <input type="radio" id="female" name="gender-select" value="female">
+          <label for="female">Female</label>
+      </div><br>
+      <!-- Age -->
+      <div id="age">
+        <label for="age">Age:</label>
+        <input type="text" placeholder="" name="age" value="18">
+      </div><br>
+      <!-- Date of birth -->
+      <div id="dob">
+        <label for="birthday">Date of birth:</label>
+        <input type="date" id="birthday" name="birthday">
+      </div><br>
+      <!-- Favorite color -->
+      <div id="fav-color">
+        <label for="fav-color">Favorite color:</label>
+        <input type="color" id="fav-color" name="fav-color">
+      </div><br>
+      <!-- Country -->
+      <div id="country">
+        <label for="country">Which country:</label>
+        <select name="country" id="country-select">
+          <option value=""></option>
+        </select>
+      </div><br>
+    </div>
+
+    <!-- Your indicators -->
+    <div id="your-indicators">
+      <p>Your Indicators</p>
+      <!-- Height -->
+      <label for="height-range">Height:</label> &nbsp Short
+      <input type="range" id="height" name="height-range"> &nbsp Tall<br>
+      <!-- Salary -->
+      <label for="salary-range">Salary:</label> &nbsp Poor
+      <input type="range" id="salary" name="salary-range"> &nbsp Rich
+    </div><br>
+
+    <!-- Your Contact Information -->
+    <div id="contact">
+      <p>Your Contact Information</p>
+      <!-- Email -->
+      <label for="name">Email:</label>
+      <input type="text"  name="email" value=""><br>
+      <!-- Mobile -->
+      <label for="name">Mobile:</label>
+      <input type="text"  name="email" value=""><br>
+      <!-- Address -->
+      <label for="address">Address:</label>
+      <textarea id="address-area" name="address" rows="4" cols="33">
+      </textarea>
+      <!-- Method to contact you -->
+      <p>Method to contact you:</p>
+      <!-- Email checkbox -->
+      <label for="email">Email</label>
+      <input type="checkbox" id="email-checkbox" name="email" value="Email">
+      <!-- Whatsapp checkbox -->
+      <label for="Whatsapp">Whatsapp</label>
+      <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
+      <!-- In-app chat checkbox -->
+      <label for="Whatsapp">In-app chat</label>
+      <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
+    </div><br>
+
+    <input type="submit" value="Submit!">
+
+  </form>
+
+
+<hr>
+
+</body>
+</html>
