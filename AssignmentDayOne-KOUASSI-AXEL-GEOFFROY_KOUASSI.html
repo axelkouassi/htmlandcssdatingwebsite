@@ -2,121 +2,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Sample dating website.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Dating Website</title>
 </head>
 
 <body>
 
+  <main>
+    <hr>
+
+    <form>
+
+      <header>
+        <nav></nav>
+        <h1>Please Enter Your Details For Our Dating Website!</h1>
+      </header>
+
+      <!-- Face details -->
+      <div id="face">
+        <fieldset>
+          <legend>Your Face</legend>
+          Your image:
+          <form class="" action="index.html" method="post">
+            <input type="file" id="myfile" name="myfile">
+          </form><br>
+          Image preview:
+        </fieldset>
+      </div><br>
+
+      <!-- General Details -->
+      <div id="general-details">
+        <fieldset>
+          <legend>Your General Details</legend>
+          <!-- Name -->
+          <div id="name">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Your full name" name="name" value="">
+          </div><br>
+          <!-- Gender -->
+          <div id="gender">
+              <label for="gender-select">Gender:</label>
+              <!-- Male -->
+              <input type="radio" id="male" name="gender-select" value="male">
+              <label for="male">Male</label>
+              <!-- Female -->
+              <input type="radio" id="female" name="gender-select" value="female">
+              <label for="female">Female</label>
+          </div><br>
+          <!-- Age -->
+          <div id="age">
+            <label for="age">Age:</label>
+            <input type="text" placeholder="" name="age" value="18">
+          </div><br>
+          <!-- Date of birth -->
+          <div id="dob">
+            <label for="birthday">Date of birth:</label>
+            <input type="date" id="birthday" name="birthday">
+          </div><br>
+          <!-- Favorite color -->
+          <div id="fav-color">
+            <label for="fav-color">Favorite color:</label>
+            <input type="color" id="fav-color" name="fav-color">
+          </div><br>
+          <!-- Country -->
+          <div id="country">
+            <label for="country">Which country:</label>
+            <select name="country" id="country-select">
+              <option value=""></option>
+            </select>
+          </div>
+        </fieldset>
+      </div><br>
+
+      <!-- Your indicators -->
+      <div id="your-indicators">
+        <fieldset>
+          <legend>Your Indicators</legend>
+          <!-- Height -->
+          <label for="height-range">Height:</label> &nbsp Short
+          <input type="range" id="height" name="height-range"> &nbsp Tall<br>
+          <!-- Salary -->
+          <label for="salary-range">Salary:</label> &nbsp Poor
+          <input type="range" id="salary" name="salary-range"> &nbsp Rich
+        </fieldset>
+      </div><br>
+
+      <!-- Your Contact Information -->
+      <div id="contact">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <!-- Email -->
+          <label for="name">Email:</label>
+          <input type="text"  name="email" value=""><br>
+          <!-- Mobile -->
+          <label for="name">Mobile:</label>
+          <input type="text"  name="email" value=""><br>
+          <!-- Address -->
+          <label for="address">Address:</label>
+          <textarea id="address-area" name="address" rows="4" cols="33">
+          </textarea><br>
+          <!-- Method to contact you -->
+          Method to contact you:
+          <!-- Email checkbox -->
+          <input type="checkbox" id="email-checkbox" name="email" value="Email">
+          <label for="email">Email</label>
+          <!-- Whatsapp checkbox -->
+            <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
+            <label for="Whatsapp">Whatsapp</label>
+          <!-- In-app chat checkbox -->
+          <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
+          <label for="Whatsapp">In-app chat</label>
+        </fieldset>
+      </div><br>
+
+      <input type="submit" value="Submit!">
+
+    </form>
+
+
   <hr>
 
-  <form class="" action="index.html" method="post">
+  </main>
 
-    <h1>Please Enter Your Details For Our Dating Website!</h1>
+  <footer>
+  </footer>
 
-    <!-- Face details -->
-    <div id="face">
-      <fieldset>
-        <legend>Your Face</legend>
-        Your image:
-        <form class="" action="index.html" method="post">
-          <input type="file" id="myfile" name="myfile">
-        </form><br>
-        Image preview:
-      </fieldset>
-    </div><br>
-
-    <!-- General Details -->
-    <div id="general-details">
-      <fieldset>
-        <legend>Your General Details</legend>
-        <!-- Name -->
-        <div id="name">
-          <label for="name">Name:</label>
-          <input type="text" placeholder="Your full name" name="name" value="">
-        </div><br>
-        <!-- Gender -->
-        <div id="gender">
-            <label for="gender-select">Gender:</label>
-            <!-- Male -->
-            <input type="radio" id="male" name="gender-select" value="male">
-            <label for="male">Male</label>
-            <!-- Female -->
-            <input type="radio" id="female" name="gender-select" value="female">
-            <label for="female">Female</label>
-        </div><br>
-        <!-- Age -->
-        <div id="age">
-          <label for="age">Age:</label>
-          <input type="text" placeholder="" name="age" value="18">
-        </div><br>
-        <!-- Date of birth -->
-        <div id="dob">
-          <label for="birthday">Date of birth:</label>
-          <input type="date" id="birthday" name="birthday">
-        </div><br>
-        <!-- Favorite color -->
-        <div id="fav-color">
-          <label for="fav-color">Favorite color:</label>
-          <input type="color" id="fav-color" name="fav-color">
-        </div><br>
-        <!-- Country -->
-        <div id="country">
-          <label for="country">Which country:</label>
-          <select name="country" id="country-select">
-            <option value=""></option>
-          </select>
-        </div>
-      </fieldset>
-    </div><br>
-
-    <!-- Your indicators -->
-    <div id="your-indicators">
-      <fieldset>
-        <legend>Your Indicators</legend>
-        <!-- Height -->
-        <label for="height-range">Height:</label> &nbsp Short
-        <input type="range" id="height" name="height-range"> &nbsp Tall<br>
-        <!-- Salary -->
-        <label for="salary-range">Salary:</label> &nbsp Poor
-        <input type="range" id="salary" name="salary-range"> &nbsp Rich
-      </fieldset>
-    </div><br>
-
-    <!-- Your Contact Information -->
-    <div id="contact">
-      <fieldset>
-        <legend>Your Contact Information</legend>
-        <!-- Email -->
-        <label for="name">Email:</label>
-        <input type="text"  name="email" value=""><br>
-        <!-- Mobile -->
-        <label for="name">Mobile:</label>
-        <input type="text"  name="email" value=""><br>
-        <!-- Address -->
-        <label for="address">Address:</label>
-        <textarea id="address-area" name="address" rows="4" cols="33">
-        </textarea><br>
-        <!-- Method to contact you -->
-        Method to contact you:
-        <!-- Email checkbox -->
-        <input type="checkbox" id="email-checkbox" name="email" value="Email">
-        <label for="email">Email</label>
-        <!-- Whatsapp checkbox -->
-          <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
-          <label for="Whatsapp">Whatsapp</label>
-        <!-- In-app chat checkbox -->
-        <input type="checkbox" id="email-checkbox" name="Whatsapp" value="Whatsapp">
-        <label for="Whatsapp">In-app chat</label>
-      </fieldset>
-    </div><br>
-
-    <input type="submit" value="Submit!">
-
-  </form>
-
-
-<hr>
 
 </body>
 </html>
