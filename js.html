@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    Click here to enter your name:&nbsp
+    <button onclick="userName()">Click here!</button><br><br>
+
+
+    <p id="username"></p>
+    <script type="text/javascript">
+      console.log("Welcome to the page.");
+      //Welcomes the user to the page using alert
+      alert("Welcome to the page.");
+      //Ask the User to enter his/her name using prompt
+      function userName(){
+        var username = prompt("Please enter your name here!");
+        //Using a Confirm, ask the user if he/she like Soccer
+        var answer = confirm("Do you like soccer? Press 'ok' if you like it or 'cancel' if you don't.");
+        //Display the User name and his/her interest in Soccer on the page loaded and on the console
+        if(username && answer == true){
+          document.getElementById("username").innerHTML = username + " likes soccer.";
+          console.console.log();
+        }else{
+          document.getElementById("username").innerHTML = username + " does not like soccer.";
+        }
+      }
+
+    </script>
+  </body>
+</html>
