@@ -3,9 +3,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>JavaScript alert, prompt, and confirmation</title>
   </head>
   <body>
+
+    <h1>JavaScript alert, prompt, and confirmation</h1>
 
     Click here to enter your name:&nbsp
     <button onclick="userName()">Click here!</button><br><br>
@@ -23,10 +25,11 @@
         var answer = confirm("Do you like soccer? Press 'ok' if you like it or 'cancel' if you don't.");
         //Display the User name and his/her interest in Soccer on the page loaded and on the console
         if(username && answer == true){
-          document.getElementById("username").innerHTML = username + " likes soccer.";
-          console.console.log();
+          var display = document.getElementById("username").innerHTML = username + " likes soccer.";
+          console.log(display);
         }else{
-          document.getElementById("username").innerHTML = username + " does not like soccer.";
+          var display = document.getElementById("username").innerHTML = username + " does not like soccer.";
+          console.log(display);
         }
       }
 
