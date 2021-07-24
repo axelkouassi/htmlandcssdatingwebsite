@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript For loop (odd/even)</title>
+  </head>
+  <body>
+
+    <h1>JavaScript For loop (odd/even)</h1><br>
+    <p>For loop to iterate through a range of numbers from 0 to 15 and display whether a
+      particular number is odd or even.</p><br>
+
+      Click here to start iteration:&nbsp
+      <button onclick="iterate()">Start iteration</button><br><br>
+
+    <div id="output"></div>
+
+
+  <script type="text/javascript">
+
+    alert("Welcome to the page. \nThis page will iterate through a range of numbers from o to 15 and display whether each specific nunber is odd or even.");
+
+    function iterate(){
+
+      var display=""
+
+      //Loop over range of numbers 0 to 15
+      display+="<table>"
+      for (var i = 0; i <= 15; i++){
+        if (i % 2 === 0){
+          display+="<tr>"
+          display +=  "<td>" + i + " is even." + "</td>";
+          display+="</tr>"
+        }else{
+          display+="<tr>"
+          display +=  "<td>" + i + " is odd." + "</td>";
+          display+="</tr>"
+        }
+      }
+      display+="</table>"
+
+      //Display html on page
+
+      document.getElementById("output").innerHTML = display;
+    }
+  </script>
+
+  </body>
+</html>
