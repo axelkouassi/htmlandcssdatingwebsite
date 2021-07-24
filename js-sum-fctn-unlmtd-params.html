@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Function sum() that accepts unlimited parameters</title>
+  </head>
+  <body>
+
+    <h1>JavaScript Function sum() that accepts unlimited parameters</h1>
+
+    Sum function that accepts unlimited number of arguments:&nbsp
+    <!-- <button onclick="sum()">sum()</button><br> -->
+
+    <div id="output"></div>
+
+
+
+  <script type="text/javascript">
+
+    /*Function that accepts any number of parameters
+    and adds them together by iterating over the values
+    in arguments with a while Loop*/
+
+    var display = "";
+    function sum(){
+      const args = Array.from(arguments);
+      var i = 0;
+      var sum = 0;
+      display+="<table>"
+      while(i < args.length){
+        display+="<tr>"
+        sum += args[i];
+        display += "<td>" + "number " + (i+1) + ": " + args[i] + "</td>";
+        console.log("number " + (i+1) + ": " + (args[i]) + "\n");
+        i++;
+      }
+      display+="</tr>"
+
+      display+="<tr>"
+      return sum;
+    }
+
+    sum = sum(1,2,3,5,6);
+
+    display += "<td>" + "Total sum = " + (sum) + "</td>";
+    display+="</tr>"
+    display+="</table>"
+
+    //Display html on page
+    document.getElementById("output").innerHTML = display;
+
+
+    //Console output:
+    console.log("Total Sum = " + sum)
+
+
+  </script>
+  </body>
+</html>
