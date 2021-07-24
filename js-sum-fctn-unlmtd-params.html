@@ -18,13 +18,12 @@
 
   <script type="text/javascript">
 
+  var display = "";
+
     /*Function that accepts any number of parameters
     and adds them together by iterating over the values
     in arguments with a while Loop*/
-
-    var display = "";
-    function sum(){
-      const args = Array.from(arguments);
+    function sum(...args){
       var i = 0;
       var sum = 0;
       display+="<table>"
@@ -41,7 +40,7 @@
       return sum;
     }
 
-    sum = sum(1,2,3,5,6);
+    sum = sum(20,10);
 
     display += "<td>" + "Total sum = " + (sum) + "</td>";
     display+="</tr>"
