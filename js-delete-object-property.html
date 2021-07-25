@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript program to delete the property from an object.</title>
+  </head>
+  <body>
+
+    <h1>JavaScript program to delete the rollno property from the
+following object.</h1>
+
+<p>JavaScript program to delete the rollno property from the
+following object: </p>
+
+<p>var student = {<br>
+name : "David Rayy",<br>
+sclass : "VI",<br>
+rollno : 12 };</p>
+
+<p>Output is displayed inside the console.</p>
+
+<div id="output"></div>
+
+  <script type="text/javascript">
+    var student = {
+      name : "David Rayy",
+      sclass : "VI",
+      rollno : 12 };
+
+    // var values = " ";
+    // for(var value in student){
+    //   values += student[value] + " ";
+    // }
+
+    console.log("Contents of student object before deletion of \"rollno\" property: ");
+    console.log(student);
+    console.log("Does \"rollno\" property exists in student's object? " + ("rollno" in student));
+    // console.log("Values of properties in student object: " + values);
+    console.log("");
+    //Deletion of "rollno" property in student object
+    delete student.rollno;
+    console.log("Contents of student object after deletion of \"rollno\" property: ");
+    console.log(student);
+    console.log("Does \"rollno\" property exists in student's object? " + ("rollno" in student));
+    // console.log("Values of properties in student object: " + values);
+    console.log("");
+
+
+  </script>
+
+  </body>
+</html>
