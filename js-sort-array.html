@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript program to sort an array of objects</title>
+  </head>
+  <body>
+
+    <h1>JavaScript program to sort an array of objects.</h1>
+
+<p>JavaScript program to sort an array of JavaScript objects: </p>
+
+<p>var library = [<br>
+{ title: 'The Road Ahead', author: 'Bill Gates', libraryID: 1254 },<br>
+{ title: 'Walter Isaacson', author: 'Steve Jobs', libraryID: 4264 },<br>
+{ title: 'Mockingjay: The Final Book of The Hunger Games', author: 'Suzanne<br>
+Collins', libraryID: 3245 }];</p>
+
+<p>Expected Output:
+[<br>
+{ author: "Steve Jobs", libraryID: 4264, title: "Walter Isaacson" },<br>
+{ author: "Suzanne Collins", libraryID: 3245, title: "Mockingjay: The Final Book
+of The Hunger Games" },<br>
+{ author: "Bill Gates", libraryID: 1254, title: "The Road Ahead" }]</p>
+
+<p>Output is displayed inside the console.</p>
+
+<div id="output"></div>
+
+  <script type="text/javascript">
+    let library = [
+    { title: 'The Road Ahead', author: 'Bill Gates', libraryID: 1254 },
+    { title: 'Walter Isaacson', author: 'Steve Jobs', libraryID: 4264 },
+    { title: 'Mockingjay: The Final Book of The Hunger Games', author: 'Suzanne Collins', libraryID: 3245 }];
+
+    // console.log("Contents of array of objects before sorting by libraryID descending order: ");
+    // console.log(library);
+
+    //Sort library individual elements by author
+    // library.sort(function(c,d){
+    //     if(c.author.toLowerCase() < d.author.toLowerCase()){
+    //       return -1;
+    //     }else if(c.author.toLowerCase() > d.author.toLowerCase()){
+    //       return 1;
+    //     }else{
+    //       return 0;
+    //     }
+    //   })
+
+    //Sorting array objects by libraryID
+    //function sortArray(library){
+      library.sort(function(a,b){
+        return b.libraryID - a.libraryID;
+      })
+    //}
+
+
+
+
+
+    console.log("Contents of array of objects after sorting by libraryID descending order: ");
+    console.log(library);
+
+
+
+  </script>
+
+  </body>
+</html>
