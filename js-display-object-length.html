@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript program to display object's length</title>
+  </head>
+  <body>
+
+    <h1>JavaScript program to display object's length.</h1>
+
+<p>JavaScript program to display object's length: </p>
+
+<p>var student = {<br>
+name : "David Rayy",<br>
+sclass : "VI",<br>
+rollno : 12 };</p>
+
+<p>Output is displayed inside the console.</p>
+
+<div id="output"></div>
+
+  <script type="text/javascript">
+    var student = {
+      name : "David Rayy",
+      sclass : "VI",
+      rollno : 12 };
+
+    // Count of properties using Enumeration
+    console.log("Display of student object length using Enumeration:");
+    var count = 0;
+    for (property in student){
+      count++;
+    }
+    console.log("Length of student object using Enumeration: " + count);
+
+    console.log();
+
+    // Count of properties using Enumeration
+    console.log("Display of student object length using Object.keys:");
+    console.log("Length of student object using Object.keys: " + Object.keys(student).length);
+
+
+
+  </script>
+
+  </body>
+</html>
