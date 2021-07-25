@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript program to create a constructor function</title>
+  </head>
+  <body>
+
+    <h1>JavaScript program to create a constructor function.</h1>
+
+<p>JavaScript program to create a constructor function Calculator that creates objects with 3
+methods: <br>
+<ul>
+  <li>read() asks for two values using prompt and remembers them in
+  object properties.</li>
+  <li>sum() returns the sum of these properties.</li>
+  <li>mul() returns the multiplication product of these properties.</li>
+</ul>
+</p>
+
+<b>Click here to enter two numbers separated by space:&nbsp</b>
+<button onclick="calculator.read()">Click here!</button><br><br>
+
+<p>Output is displayed inside the console.</p>
+
+<div id="output"></div>
+
+  <script type="text/javascript">
+
+    //Constructor function Calculator
+    function Calculator(){
+      this.read = function(){
+        var values = prompt("Please enter two numbers separated by space");
+        var tempArr = values.split(' ');
+        var value1 = tempArr[0];
+        var value2 = tempArr[1];
+        this.value1 = value1;
+        this.value2 = value2;
+        console.log("Value 1: " + this.value1);
+        console.log("Value 2: " + this.value2);
+        console.log("Sum: " + (this.sum()));
+        console.log("Multiplication: " + (this.mull()));
+      }
+
+      this.sum = function(){
+        return parseInt(this.value1) + parseInt(this.value2)
+      }
+
+      this.mull = function(){
+        return parseInt(this.value1) * parseInt(this.value2);
+      }
+    }
+
+    var calculator = new Calculator();
+
+  </script>
+
+  </body>
+</html>
