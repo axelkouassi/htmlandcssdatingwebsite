@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript program to create a constructor function that accepts arguments</title>
+  </head>
+  <body>
+
+    <h1>JavaScript program to create a constructor function that accepts arguments.</h1>
+
+<p>JavaScript program to create a constructor function called Hero That will accept the
+arguments name and occupation: <br>
+<ol>
+  <li>Use Hero.prototype to add a method whoAreYou that will return:
+My name is [the hero's name] and I am a [the hero's occupation].</li>
+  <li>Use the Hero constructor to create an object hero1 with the name
+Michaelangello and occupation Ninja.</li>
+  <li>Use the whoAreYou method to log to the console hero1's name and
+occupation.</li>
+</ol>
+</p>
+
+<p>Output is displayed inside the console.</p>
+
+<div id="output"></div>
+
+  <script type="text/javascript">
+
+    var name;
+    var occupation;
+
+    //Constructor function Hero
+    function Hero(name, occupation){
+        this.name = name;
+        this.occupation = occupation;
+        console.log("Name: " + this.name);
+        console.log("Occupation: " + this.occupation);
+    }
+
+    Hero.prototype.whoAreYou = function(){
+      console.log("My name is " + this.name + " and I am a " + this.occupation + ".");
+    }
+
+    var hero1 = new Hero("Michaelangello","Ninja");
+
+
+    hero1.whoAreYou();
+
+  </script>
+
+  </body>
+</html>
